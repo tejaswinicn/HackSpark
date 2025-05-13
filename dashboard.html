@@ -59,17 +59,24 @@
             to { opacity: 1; }
         }
 
-        #logout {
-            color: #d63031;
-            margin-top: 20px;
-            text-align: center;
-            display: block;
-            cursor: pointer;
-        }
+        .logout-button {
+    display: block;
+    margin: 40px auto;           /* centers the button horizontally */
+    padding: 12px 24px;
+    background-color: #74b9ff;   /* sky blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
-        #logout:hover {
-            text-decoration: underline;
-        }
+.logout-button:hover {
+    background-color: #00BFFF;   /* deeper sky blue on hover */
+    transform: scale(1.05);
+}
     </style>
 </head>
 <body>
@@ -122,7 +129,7 @@
             <p>Save or view your latest scientific notes, hypotheses and research logs...</p>
         </div>
 
-        <div id="logout">Logout</div>
+        <button class="logout-button" onclick="location.href='userindex.html'">Logout</button>
     </div>
 
     <script src="script.js"></script>
