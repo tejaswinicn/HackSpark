@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Recommendations - Drug Discovery AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Recommendations -->
+    <section class="container py-5">
+        <h2 class="mb-4">Drug Recommendations</h2>
+        <form>
+            <div class="mb-3">
+                <label for="health-problem" class="form-label">Health Problem</label>
+                <input type="text" class="form-control" id="health-problem" placeholder="e.g. Cancer, Diabetes" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Recommendations</button>
+        </form>
+
+        <h3 class="mt-4">Recommended Drugs</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Drug 1: Example Drug - Accuracy: 85%</li>
+            <li class="list-group-item">Drug 2: Another Drug - Accuracy: 90%</li>
+            <li class="list-group-item">Drug 3: Third Drug - Accuracy: 80%</li>
+        </ul>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

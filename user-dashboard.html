@@ -1,0 +1,40 @@
+<!-- user-dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h2>Welcome, User!</h2>
+
+        <div class="section">
+            <h3>Get Drug Recommendation</h3>
+            <input type="text" id="user-disease-input" placeholder="Enter Disease">
+            <button onclick="getUserDrug()">Get Drug</button>
+            <div id="user-drug-result"></div>
+        </div>
+
+        <div class="section">
+            <h3>Check Side Effects</h3>
+            <input type="text" id="user-sideeffect-input" placeholder="Enter Drug">
+            <button onclick="getUserSideEffects()">View Side Effects</button>
+            <div id="user-sideeffect-result"></div>
+        </div>
+
+        <div class="section">
+            <h3>Drug Description</h3>
+            <input type="text" id="user-description-input" placeholder="Enter Drug">
+            <button onclick="getUserDescription()">View Description</button>
+            <div id="user-description-result"></div>
+        </div>
+
+        <button class="logout-btn" onclick="location.href='index.html'">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+/* General Styling */
+body {
+    background: linear-gradient(to right, #272757, #505081, #0F0E47);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding-top: 50px;
+    background-size: 400% 400%;
+    animation: bgShift 15s  ease infinite;
+}
+
+@keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+/* Landing Page */
+#landing {
+    background: linear-gradient(rgba(15, 14, 71, 0.8), rgba(39, 39, 87, 0.8)), url('https://source.unsplash.com/1600x900/?science,lab') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeInUp 1.2s ease-in-out;
+
+}
+
+/* Card Styling */
+.card {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    border: 1px solid #505081;
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+  
+
+.card input, .card label {
+    color: white;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(45deg, #8686AC, #505081);
+    border: none;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #272757, #0F0E47);
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.btn {
+    box-shadow: 0 4px 15px rgba(80, 80, 129, 0.4);
+}
+
+.btn:hover {
+    box-shadow: 0 6px 25px rgba(80, 80, 129, 0.6);
+}
+
+
+/* Navigation Links */
+.nav-link {
+    color: #ccc;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* --- DASHBOARD STYLES --- */
+body.dashboard {
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 60px auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.dashboard-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.dashboard-buttons .btn {
+    background: #74b9ff;
+    color: white;
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    transition: 0.3s;
+}
+
+.dashboard-buttons .btn:hover {
+    background: #a29bfe;
+    transform: scale(1.02);
+}
+
+.feature-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.feature-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#logout {
+    color: #d63031;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+#logout:hover {
+    text-decoration: underline;
+}
+
+/* Fade-in Animation Class */
+.fade-in {
+    animation: fadeInUp 1s ease-in forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style for the new Drug Information Search Section */
+#drug-search {
+    margin-top: 30px;
+    padding-top: 20px;
+    background: #f7f9fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#drug-search h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+#drug-search input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#drug-search input:focus {
+    outline: none;
+    border-color: #74b9ff;
+}
+
+#drug-search button {
+    width: 100%;
+    padding: 10px;
+    background: #74b9ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#drug-search button:hover {
+    background-color: #a29bfe;
+}
+
+#drug-info-results {
+    margin-top: 20px;
+}
+
+#drug-info-results h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#drug-info-results ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#drug-info-results li {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+#drug-info-results li strong {
+    color: #2c3e50;
+}
+
+#drug-info-results p {
+    font-size: 16px;
+    color: #e74c3c;
+}
+
+
+
